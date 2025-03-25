@@ -3,20 +3,20 @@ function Point(x, y) {
     this.y = y
 }
 
-Object.prototype.getX = function() {
+Point.prototype.getX = function() {
     return this.x
 }
 
-Object.prototype.getY = function() {
+Point.prototype.getY = function() {
     return this.y
 }
 
-Object.prototype.translate = function(dx, dy) {
+Point.prototype.translate = function(dx, dy) {
     this.x += dx
     this.y += dy
 }
 
-Object.prototype.scale = function(num) {
+Point.prototype.scale = function(num) {
     this.x *= num
     this.y *= num
 }
