@@ -1,5 +1,6 @@
+// createPoint создает точку на плоскости с координатами x, y 
 function createPoint(x, y) {
-    return {
+    return { 
         x, y,
 
         getX() {
