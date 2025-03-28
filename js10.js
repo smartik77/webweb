@@ -64,23 +64,26 @@ class CheckingAccount extends BankAccount {
 }
 
 
-const first = new BankAccount()
-console.log(first)
-first.deposit(10)
-first.withdraw(1)
-first.getBalance()
+const account = new BankAccount()
+console.log(account)
+account.deposit(10)
+account.withdraw(1)
+account.getBalance()
 
-console.log('-------------------------------------------------------------------------------------------------------------')
+console.log('---------------------------------------------------------------------------------------------')
 
 const saving = new SavingsAccount(100, 0.07)
 console.log(saving)
 saving.addInterest()
 saving.getBalance()
 
-console.log('-------------------------------------------------------------------------------------------------------------')
+console.log('---------------------------------------------------------------------------------------------')
 
 const checking = new CheckingAccount(100, 3)
 checking.withdraw(10)
+
+
+
 
 
 
