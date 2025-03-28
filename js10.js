@@ -56,10 +56,10 @@ class CheckingAccount extends BankAccount {
 
      // Переопределяем withdraw() с добавлением комиссии
      withdraw(amount) {
-          return super.withdraw(amount + this.fee) // Используем родительский метод
-          console.log('С баланса снято ', amount)
+         console.log('С баланса снято ', amount)
           console.log('комиссия:  ',  this.fee)
           console.log('Счет:', this.balance)
+          return super.withdraw(amount + this.fee) // Используем родительский метод
      }
 }
 
