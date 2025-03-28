@@ -1,7 +1,7 @@
-const button = document.getElementById('button1');
+const button = document.getElementById('button1')
 button.addEventListener('click', () => {
-  button.classList.toggle('clicked');    // Прямое обращение к button
-});
+  button.classList.toggle('clicked')    // Прямое обращение к button
+})
 
 // В изначальном коде Гарри использует this, но в контексте обработчика события, если функция объявлена как function() { ... }, this ссылается на элемент, вызвавший событие. 
 // Однако при использовании addEventListener с обычной функцией, this должен работать.
