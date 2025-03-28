@@ -22,8 +22,6 @@ class BankAccount {
 
 
 
-
-// можно исправить код так:
 const harrysAccount = new BankAccount(100)
 harrysAccount.deposit.call(harrysAccount, 200) 
 harrysAccount.deposit.apply(harrysAccount, [1000])
