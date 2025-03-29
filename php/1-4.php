@@ -8,4 +8,5 @@
        $sum +=  $array[$i];
     }
 
-echo $sum;
+    echo $sum;
+?>
