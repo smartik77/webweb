@@ -3,7 +3,7 @@
 
     $counter = 0;
     
-    foreach ($array as $key => $value) {
+    foreach ($array as $value) {
         if ($value < 0) {
             $counter++; 
         }
