@@ -1,5 +1,10 @@
 function hasOdd(numbers) {
-  return numbers.some(num => num % 2 !== 0)
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+      return true
+    }
+  }
+  return false
 }
 
 console.log(hasOdd([1, 2, 3]))
