@@ -1,5 +1,10 @@
 function allEven(numbers) {
-  return numbers.every(num => num % 2 === 0)
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+      return false
+    }
+  }
+  return true
 }
 
 console.log(allEven([2, 4, 6]))
